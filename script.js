@@ -1,9 +1,8 @@
 // script.js
 const bucketUrl = 'https://nkm-01130113.s3.amazonaws.com/'
 
-const filesPath = await fetchFilePath();
-
-const cardData = filesPath.map(filePath =>{
+fetchFilePath().then((filesPath)=>{
+  const cardData = filesPath.map(filePath =>{
     return  { imageUrl: bucketUrl+filePath.URL, title: filePath.TITLE, content: filePath.CONTENT }
 })
   
@@ -29,6 +28,9 @@ const cardData = filesPath.map(filePath =>{
   
     cardContainer.appendChild(cardElement);
   }
+});
+
+
 
 
   async function fetchFilePath(){
