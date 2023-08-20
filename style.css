@@ -1,0 +1,22 @@
+/* styles.css */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1;
+    max-width: calc(20% - 20px); /* 20% width minus the gap */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
