@@ -1,5 +1,5 @@
 // script.js
-const bucketUrl = 'https://nkm-01130113.s3.amazonaws.com/'
+const bucketUrl = 'https://nkm-0113.s3.amazonaws.com/'
 
 fetchFilePath().then((filesPath)=>{
   const cardData = filesPath.map(filePath =>{
