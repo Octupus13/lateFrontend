@@ -36,7 +36,7 @@ fetchFilePath().then((filesPath)=>{
   async function fetchFilePath(){
     try{
 
-        const response = await fetch('http://34.196.65.142:3001')
+        const response = await fetch('http://3.217.73.255:3001')
         
         if(!response.ok){
             throw new Error("fetxh บ่ได่")
